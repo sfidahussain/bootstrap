@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap - Image Gallery Mockup</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
+</head>
+<style>
+	.background_image {
+		background-image: url("https://images.unsplash.com/photo-1493121955166-81661dcf50bd?dpr=1&auto=compress,format&fit=crop&w=2800&h=&q=80&cs=tinysrgb&crop=");
+		/* Full height */
+	    height: 100%; 
+
+	    /* Center and scale the image nicely */
+	    background-position: center top;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+	* { 
+		box-sizing: border-box; 
+	}
+
+	/* force scrollbar */
+	html { 
+		overflow-y: scroll; 
+		height: 100%;
+	}
+
+	body { 
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	.navbar {
+		background-color: transparent;
+		outline: none;
+		border: none;
+	}
+
+	.jumbotron {
+		 padding-top: 20%;
+      padding-bottom: 20%;
+	}
+	.jumbotron h1 {
+		font-family: 'Playfair Display', serif;
+	}
+
+	.jumbotron p {
+		font-family: 'Playfair Display', serif;
+	}
+	/* ---- grid ---- */
+
+	/* clear fix */
+	.grid:after {
+	  content: '';
+	  display: block;
+	  clear: both;
+	}
+
+	/* ---- .grid-item ---- */
+
+	.grid-sizer,
+	.grid-item {
+	  width: 33.333%;
+	}
+
+	.grid-item {
+	  float: left;
+	}
+
+	.grid-item img {
+	  display: block;
+	  max-width: 100%;
+	}
+
+</style>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a href="#" class="navbar-brand"><i class="fa fa-plus" aria-hidden="true"></i></a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="jumbotron background_image">
+		<div class="container">
+			<h1>Travel</h1>
+			<p>Live Well. Laugh Much. Travel Often. </p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="grid">
+		  <div class="grid-sizer"></div>
+		  <div class="grid-item">
+		    <img src="https://images.unsplash.com/photo-1500122497987-96abce325586?dpr=1&auto=compress,format&fit=crop&w=2734&h=&q=80&cs=tinysrgb&crop=" />
+		  </div>
+		  <div class="grid-item">
+		    <img src="https://images.unsplash.com/photo-1490365728022-deae76380607?dpr=1&auto=compress,format&fit=crop&w=2767&h=&q=80&cs=tinysrgb&crop=" />
+		  </div>
+		  <div class="grid-item">
+		    <img src="https://images.unsplash.com/photo-1444194751366-f16f38b94dd9?dpr=1&auto=compress,format&fit=crop&w=2175&h=&q=80&cs=tinysrgb&crop=" />
+		  </div>
+		  <div class="grid-item">
+		    <img src="https://images.unsplash.com/photo-1488503926145-c0ddd53be2db?dpr=1&auto=compress,format&fit=crop&w=2550&h=&q=80&cs=tinysrgb&crop=" />
+		  </div>
+		  <div class="grid-item">
+		    <img src="https://images.unsplash.com/photo-1504681869696-d977211a5f4c?dpr=1&auto=compress,format&fit=crop&w=2081&h=&q=80&cs=tinysrgb&crop=" />
+		  </div>
+		  <div class="grid-item">
+		    <img src="https://images.unsplash.com/photo-1420496368970-d83b063b5b48?dpr=1&auto=compress,format&fit=crop&w=2534&h=&q=80&cs=tinysrgb&crop=" />
+		  </div>
+		  <div class="grid-item">
+		    <img src="https://images.unsplash.com/photo-1494947356691-434358cea5a3?dpr=1&auto=compress,format&fit=crop&w=2600&h=&q=80&cs=tinysrgb&crop=" />
+		  </div>
+		  <div class="grid-item">
+		    <img src="https://images.unsplash.com/photo-1475139450941-3b6464b2dde3?dpr=1&auto=compress,format&fit=crop&w=2391&h=&q=80&cs=tinysrgb&crop=" />
+		  </div>
+		  <div class="grid-item">
+		    <img src="https://images.unsplash.com/photo-1500514966906-fe245eea9344?dpr=1&auto=compress,format&fit=crop&w=2534&h=&q=80&cs=tinysrgb&crop=" />
+		  </div>
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script src="https://use.fontawesome.com/690e982a0d.js"></script>
+<script>
+
+// init Masonry
+var $grid = $('.grid').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+</script>
+
+</body>
+
+</html>
